@@ -1,0 +1,122 @@
+a {
+    text-decoration: none;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: aqua;
+    display: flex;
+}
+
+table {
+    background-color: rgb(255, 47, 203);
+    width: 800px;
+    border-collapse: collapse;
+}
+#Title {
+    font-size: 65px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: red;
+    text-shadow: 5px 5px 5px blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 8px solid rgb(153, 0, 255);
+    border-left:  8px solid rgb(153, 0, 255);
+    border-right:  8px solid rgb(153, 0, 255);
+    
+}
+#Stitle {
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: blue;
+    background: yellow;
+    text-shadow: 5px 5px 5px red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    border-left: 8px solid rgb(153, 0, 255);
+    border-right: 8px solid rgb(153, 0, 255);
+    border-bottom: 8px solid rgb(153, 0, 255);
+}
+#green-line {
+    background-color: rgb(25, 255, 45);
+    animation: rainbowText 2s linear infinite;
+    font-size: 18px;
+    vertical-align: auto;
+    height: auto;
+    border-style: solid;
+    border-color: rgb(255, 47, 203);
+    text-shadow: 0px 0px 10px rgb(255, 0, 234);
+    
+}
+#menu {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    text-align: center;  
+    border-collapse: collapse;
+}
+#menu a:hover {
+    color: rgb(0, 255, 76);
+    text-shadow: 0px 0px 10px rgb(0, 255, 76);
+    text-decoration: underline;
+    padding: 10px 20px;
+}
+.content {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px;
+    background-image: linear-gradient(to top right, rgb(255, 238, 0), rgb(255, 255, 255));
+    border-style: dashed;
+    border-width: 8px;
+    border-color: rgb(153, 0, 255);
+    background-clip: content-box;
+
+}
+#rating {
+    border: #0004ff solid 5px;
+    border-style: dashed;
+    background-color: rgb(0, 255, 76);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(238, 255, 0);
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+#c-title {
+    color: #0004ff;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+}
+#c-rev {
+    color: #0004ff;
+
+}
+.box {
+    border: 5px solid #ff69b4; /* rózsaszín keret */
+    border-radius: 15px; /* lekerekített sarkok */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* árnyék */
+}
+
+@keyframes rainbowText {
+    0% { color: #ff0000; }
+    14% { color: #ff7f00; }
+    28% { color: #ffff00; }
+    42% { color: #00ff00; }
+    57% { color: #0000ff; }
+    71% { color: #4b0082; }
+    85% { color: #9400d3; }
+    100% { color: #ff0000; }
+  }
+  @keyframes blink {
+    50% { visibility: hidden; }
+  }
+
