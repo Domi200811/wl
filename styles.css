@@ -118,6 +118,14 @@ table {
     border-radius: 15px; 
     box-shadow: 0 0 20px 5px #ff69b4;
 }
+#link{
+    color: #0004ff;
+}
+#link a:hover {
+    color: rgb(0, 255, 76);
+    text-shadow: 0px 0px 10px rgb(0, 255, 76);
+    text-decoration: underline;
+}    
 #ars {
     color: #00ff00;
     font-family: "Comic Sans MS", cursive, sans-serif;
