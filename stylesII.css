@@ -4,6 +4,7 @@ body{
     justify-content: center;
     display:  flex;
     justify-content: center;
+    animation: loading 1s;
 }
 table{
     top: 50%;
@@ -11,22 +12,21 @@ table{
     transform: translate(-50%, -50%);
     position: absolute;
 }
-#md{
+#md, #dk {
     padding: 15px;
-    transition: transform 0.5s;
+    transition: transform, 0.5s, filter 0.5s;
     transform: scale(1.0);
-}
-#dk{
-    padding: 15px;
-    transition: transform 0.5s;
-    transform: scale(1.0);
+    filter: brightness(1.0);
+    image-rendering: auto;
+    will-change: transform, filter;
 }
 
-#md:hover  {
-    animation: select 0.5s;
+#md:hover, #dk:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(205,175,69, 0.3);
+    filter: brightness(0.8);
 }
-#dk:hover  {
-    transition: transform 0.5s;
-    transform: scale(1.05);
+@keyframes loading {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
